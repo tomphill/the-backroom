@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8f6c33c48d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </head>
+  <body class="bg-black text-white font-body">
+    <nav class="p-4 sticky top-0 bg-black">
+      <div class="container mx-auto flex justify-between items-center">
+        <a
+          href="#"
+          class="border-t-2 border-b-2 border-yellow-600 p-2 font-heading text-sm"
+        >
+          THE BACKROOM
+        </a>
+        <div class="block sm:hidden text-4xl">
+          <span id="open-mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span id="close-mobile-menu" class="hidden">
+            <i class="fa-solid fa-x"></i>
+          </span>
+        </div>
+        <ul class="sm:flex gap-8 hidden">
+          <li>
+            <a href="#" class="hover:underline">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Deals</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sm:hidden">
+        <ul
+          id="mobile-menu"
+          class="flex-col gap-8 hidden text-2xl text-center p-6"
+        >
+          <li>
+            <a href="#" class="hover:underline">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Deals</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header
+      class="flex flex-col items-center justify-center min-h-[calc(100vh-72px)] bg-no-repeat bg-cover bg-center bg-yellow-950 bg-blend-overlay"
+      style="background-image: url('./assets/bg.png')"
+    >
+      <h1
+        class="border-t-4 border-b-4 border-yellow-600 p-5 font-heading text-5xl sm:text-7xl md:text-8xl"
+      >
+        THE BACKROOM
+      </h1>
+      <h2 class="font-subheading text-4xl mt-6">
+        Behind Closed Doors, Cocktails Await
+      </h2>
+      <button
+        class="hover:bg-yellow-950 mt-6 uppercase bg-black py-3 px-4 border-2 border-yellow-950 tracking-wider"
+      >
+        View our menu
+      </button>
+    </header>
+    <div
+      class="bg-gradient-to-br from-black via-slate-950 to-red-950 py-10 px-5"
+    >
+      <div
+        class="container mx-auto flex flex-col-reverse md:flex-row gap-4 items-center"
+      >
+        <div>
+          <img
+            src="./assets/negroni_2.png"
+            class="w-full h-full rounded-xl md:min-w-[400px]"
+          />
+        </div>
+        <div class="py-4">
+          <h1 class="font-heading text-5xl text-center">TWO FOR TUESDAYS</h1>
+          <h2 class="font-subheading text-3xl text-center">
+            Buy one get one free, every Tuesday
+          </h2>
+          <p class="text-xl font-light text-center text-yellow-50 pt-14">
+            Why settle for one when you can have two? Join us for an
+            unforgettable evening where luxury meets the craft of cocktail
+            making. Each drink is a masterpiece, created with premium spirits,
+            fresh ingredients, and the imagination of our master mixologists.
+            It's not just a drink; it's an experience.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mx-auto grid grid-cols-1 lg:grid-cols-2 py-10 px-5 gap-10 lg:gap-20"
+    >
+      <!-- START COCKTAIL ITEM 1 -->
+      <div class="flex flex-col-reverse sm:flex-row gap-4 items-center">
+        <div>
+          <img src="./assets/cosmopolitan.png" class="w-full h-full min-w-60" />
+        </div>
+        <div>
+          <h1 class="font-heading text-3xl">Cosmopolitan</h1>
+          <h2 class="font-subheading text-2xl">Sip on sophistication</h2>
+          <p class="text-yellow-50">
+            Sip on sophistication with our iconic Cosmopolitan. A blend of crisp
+            vodka, zesty lime, and sweet cranberry, balanced with a hint of
+            triple sec, creates this timeless pink-hued masterpiece. Served in a
+            chilled martini glass and garnished to perfection, it's the ultimate
+            cocktail for any occasion.
+          </p>
+        </div>
+      </div>
+      <!-- END COCKTAIL ITEM 1 -->
+      <!-- START COCKTAIL ITEM 2 -->
+      <div class="flex flex-col sm:flex-row gap-4 items-center">
+        <div class="text-right">
+          <h1 class="font-heading text-3xl">Cosmopolitan</h1>
+          <h2 class="font-subheading text-2xl">Sip on sophistication</h2>
+          <p class="text-yellow-50">
+            Sip on sophistication with our iconic Cosmopolitan. A blend of crisp
+            vodka, zesty lime, and sweet cranberry, balanced with a hint of
+            triple sec, creates this timeless pink-hued masterpiece. Served in a
+            chilled martini glass and garnished to perfection, it's the ultimate
+            cocktail for any occasion.
+          </p>
+        </div>
+        <div>
+          <img src="./assets/daiquiri.png" class="w-full h-full min-w-60" />
+        </div>
+      </div>
+      <!-- END COCKTAIL ITEM 2 -->
+      <!-- START COCKTAIL ITEM 1 -->
+      <div class="flex flex-col-reverse sm:flex-row gap-4 items-center">
+        <div>
+          <img src="./assets/cosmopolitan.png" class="w-full h-full min-w-60" />
+        </div>
+        <div>
+          <h1 class="font-heading text-3xl">Cosmopolitan</h1>
+          <h2 class="font-subheading text-2xl">Sip on sophistication</h2>
+          <p class="text-yellow-50">
+            Sip on sophistication with our iconic Cosmopolitan. A blend of crisp
+            vodka, zesty lime, and sweet cranberry, balanced with a hint of
+            triple sec, creates this timeless pink-hued masterpiece. Served in a
+            chilled martini glass and garnished to perfection, it's the ultimate
+            cocktail for any occasion.
+          </p>
+        </div>
+      </div>
+      <!-- END COCKTAIL ITEM 1 -->
+      <!-- START COCKTAIL ITEM 2 -->
+      <div class="flex flex-col sm:flex-row gap-4 items-center">
+        <div class="text-right">
+          <h1 class="font-heading text-3xl">Cosmopolitan</h1>
+          <h2 class="font-subheading text-2xl">Sip on sophistication</h2>
+          <p class="text-yellow-50">
+            Sip on sophistication with our iconic Cosmopolitan. A blend of crisp
+            vodka, zesty lime, and sweet cranberry, balanced with a hint of
+            triple sec, creates this timeless pink-hued masterpiece. Served in a
+            chilled martini glass and garnished to perfection, it's the ultimate
+            cocktail for any occasion.
+          </p>
+        </div>
+        <div>
+          <img src="./assets/daiquiri.png" class="w-full h-full min-w-60" />
+        </div>
+      </div>
+      <!-- END COCKTAIL ITEM 2 -->
+    </div>
+    <footer class="p-20 border-t border-yellow-950">
+      <ul class="flex justify-center gap-20 text-4xl">
+        <li>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            class="hover:text-red-600"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="hover:text-blue-600"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="hover:text-pink-600"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
